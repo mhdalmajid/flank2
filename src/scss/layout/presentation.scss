@@ -19,26 +19,70 @@
     color(purple);
 
   & p {
+    position: relative;
     display: inline;
     font-family: Barlow;
     font-weight: 500;
     font-size: 30px;
     line-height: 36px;
+    z-index: 10;
+    & img {
+      display: block;
+      position: absolute;
+    }
   }
   & .p1 {
     color: color(green);
     margin-right: 6px;
+
+    &_img1 {
+      top: 23px;
+      left: 215px;
+      z-index: -10;
+      width: 80px;
+      height: 80px;
+    }
+    &_img2 {
+      display: block;
+      position: absolute;
+      z-index: -10;
+      width: 130px;
+      height: 144px;
+      left: 200px;
+      top: 18px;
+    }
   }
   & .p2 {
     color: color(yellow);
     margin-right: 6px;
+    &_img {
+      top: 30px;
+      left: 50px;
+      z-index: -10;
+      width: 140px;
+      height: 140px;
+    }
   }
   & .p3 {
     color: color(red);
+    &_img {
+      top: 110px;
+      left: 50px;
+      z-index: -10;
+      width: 68px;
+      height: 72px;
+    }
   }
   & .p4 {
     color: color(green);
     display: block !important;
+    &_img {
+      top: -5px;
+      left: 220px;
+      z-index: -10;
+      width: 68px;
+      height: 72px;
+    }
   }
   & .p5 {
     margin-top: 70px;
