@@ -1,0 +1,72 @@
+.presentation {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @include fullscreen;
+  background: linear-gradient(
+      346.29deg,
+      rgba(254, 0, 101, 0.2) 11.66%,
+      rgba(255, 255, 255, 0.112) 37.63%,
+      rgba(255, 255, 255, 0.106) 95.28%
+    ),
+    linear-gradient(
+      11.28deg,
+      rgba(115, 4, 255, 0.5) 23.66%,
+      rgba(101, 37, 225, 0.5) 51.04%,
+      rgba(115, 4, 255, 0.5) 72.07%
+    ),
+    color(purple);
+
+  & p {
+    display: inline;
+    font-family: Barlow;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  & .p1 {
+    color: color(green);
+    margin-right: 6px;
+  }
+  & .p2 {
+    color: color(yellow);
+    margin-right: 6px;
+  }
+  & .p3 {
+    color: color(red);
+  }
+  & .p4 {
+    color: color(green);
+    display: block !important;
+  }
+  & .p5 {
+    margin-top: 70px;
+
+    color: color(yellow);
+    display: block !important;
+  }
+
+  &_arrow {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    animation-name: rise;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    backface-visibility: hidden;
+  }
+  &_arrow::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    transform: translate(-50%, -50%);
+    border-left: 8px solid #2afd2e;
+    border-bottom: 8px solid #2afd2e;
+    transform: rotate(-45deg);
+  }
+}

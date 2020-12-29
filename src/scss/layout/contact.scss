@@ -1,0 +1,148 @@
+.contact {
+  padding-top: 87px;
+  padding-left: 25px;
+  padding-right: 25px;
+  @include fullscreen;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 40.67%, rgba(255, 255, 255, 0.2) 61.59%),
+    linear-gradient(170.66deg, rgba(42, 253, 46, 0.45) 24.51%, rgba(42, 253, 46, 0.155) 55.06%), color(yellow);
+
+  & p {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: color(purple);
+  }
+  & p:nth-child(2) {
+    color: color(purple);
+    margin-top: 30px;
+  }
+  & .icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    & img {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+
+      &:hover {
+        animation: rotate 0.7s ease-in-out both;
+      }
+    }
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+  }
+  &_form input {
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  &_form .submit {
+    color: #ffffff !important;
+    background: linear-gradient(
+        346.29deg,
+        rgba(254, 0, 101, 0.2) 11.66%,
+        rgba(255, 255, 255, 0.112) 37.63%,
+        rgba(255, 255, 255, 0.106) 95.28%
+      ),
+      linear-gradient(
+        11.28deg,
+        rgba(115, 4, 255, 0.5) 23.66%,
+        rgba(101, 37, 225, 0.5) 51.04%,
+        rgba(115, 4, 255, 0.5) 72.07%
+      ),
+      color(purple);
+  }
+}
+// #my-signin2 > div {
+//   width: 100% !important;
+//   height: 60px;
+// }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #303131;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+
+  color: rgba(48, 49, 49, 0.8);
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+span.icon {
+  background: url('./../../assets/images/g-normal.png') 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 22px;
+  // font-weight: 500;
+}

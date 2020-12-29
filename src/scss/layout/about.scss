@@ -1,0 +1,35 @@
+.about {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  @include fullscreen;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 40.67%, rgba(255, 255, 255, 0.2) 61.59%),
+    linear-gradient(170.66deg, rgba(42, 253, 46, 0.45) 24.51%, rgba(42, 253, 46, 0.155) 55.06%), #fbff4a;
+
+  &_flank-small {
+    text-align: center;
+    color: color(purple);
+
+    font-weight: bold;
+    font-size: 33px;
+  }
+  &_flank-larg {
+    margin-top: 20px;
+
+    font-family: 'Lora', serif;
+    font-size: 60px;
+
+    color: #7304ff;
+  }
+
+  &_body {
+    color: color(purple);
+    font-family: 'Lora', serif;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &_p-first {
+    font-size: 30px;
+  }
+}

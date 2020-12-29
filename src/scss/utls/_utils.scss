@@ -1,0 +1,42 @@
+$container-xs: 100%;
+$container-s: 540px;
+$container-m: 720px;
+$container-l: 960px;
+$container-xl: 1140px;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+@media (max-width: 991.8px) {
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.displayNone {
+  display: none;
+}
+
+.text-clr-green {
+  color: color(green);
+}
+.text-clr-yellow {
+  color: color(yellow);
+}
+.text-clr-red {
+  color: color(red);
+}
+.text-clr-red {
+  color: color(purple);
+}
+.text-center {
+  text-align: center;
+}

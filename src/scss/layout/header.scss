@@ -1,0 +1,78 @@
+.header {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  @include fullscreen;
+
+  background: linear-gradient(113.97deg, color(purple) 30.44%, rgba(255, 255, 255, 0.17) 69.5%),
+    linear-gradient(180deg, color(green) 22.64%, color(purple) 100%);
+  &_flank-small {
+    color: color(green);
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+  }
+  & .patreon {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #f0ebeb;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+  &_middle {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: color(green);
+    transform: translate(-50%, -50%);
+  }
+  &_middle h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 100px;
+  }
+  &_middle h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  &_arrow {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    animation-name: rise;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    backface-visibility: hidden;
+  }
+  &_arrow::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    transform: translate(-50%, -50%);
+    border-left: 8px solid #2afd2e;
+    border-bottom: 8px solid #2afd2e;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rise {
+  0% {
+    opacity: 1;
+    transform: translateY(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

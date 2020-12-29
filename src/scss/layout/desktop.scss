@@ -1,0 +1,60 @@
+@media (max-width: 414px) {
+  .desktop {
+    display: none;
+  }
+}
+.desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(113.97deg, color(purple) 30.44%, rgba(255, 255, 255, 0.169) 69.5%),
+    linear-gradient(180deg, color(green) 22.64%, color(purple) 76.56%);
+  & .patreon {
+    width: 262px;
+    height: 43px;
+
+    margin: 0 auto;
+  }
+  & .patreon a {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 7px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  & .flank {
+    text-align: center;
+  }
+  & h1 {
+    font-weight: bold;
+    font-size: 200px;
+    margin: 0;
+    color: color(green);
+  }
+  & h2 {
+    top: 463px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 64px;
+
+    color: color(green);
+  }
+  & h3 {
+    margin-top: 100px !important;
+  }
+  & h3,
+  & h4 {
+    margin: 0;
+    font-family: Barlow;
+    line-height: 45.6px;
+    font-weight: 600;
+    font-size: 36px;
+
+    color: #ffffff;
+  }
+  & h4 > span {
+    color: color(green);
+  }
+}
