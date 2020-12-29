@@ -353,7 +353,7 @@ body {
 .text-center {
   text-align: center; }
 
-@media (max-width: 414px) {
+@media (max-width: 414.9px) {
   .desktop {
     display: none; } }
 
