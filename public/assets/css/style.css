@@ -501,22 +501,59 @@ body {
   height: 100vh;
   background: linear-gradient(346.29deg, rgba(254, 0, 101, 0.2) 11.66%, rgba(255, 255, 255, 0.112) 37.63%, rgba(255, 255, 255, 0.106) 95.28%), linear-gradient(11.28deg, rgba(115, 4, 255, 0.5) 23.66%, rgba(101, 37, 225, 0.5) 51.04%, rgba(115, 4, 255, 0.5) 72.07%), var(--clr-purple); }
   .presentation p {
+    position: relative;
     display: inline;
     font-family: Barlow;
     font-weight: 500;
     font-size: 30px;
-    line-height: 36px; }
+    line-height: 36px;
+    z-index: 10; }
+    .presentation p img {
+      display: block;
+      position: absolute; }
   .presentation .p1 {
     color: var(--clr-green);
     margin-right: 6px; }
+    .presentation .p1_img1 {
+      top: 23px;
+      left: 215px;
+      z-index: -10;
+      width: 80px;
+      height: 80px; }
+    .presentation .p1_img2 {
+      display: block;
+      position: absolute;
+      z-index: -10;
+      width: 130px;
+      height: 144px;
+      left: 200px;
+      top: 18px; }
   .presentation .p2 {
     color: var(--clr-yellow);
     margin-right: 6px; }
+    .presentation .p2_img {
+      top: 30px;
+      left: 50px;
+      z-index: -10;
+      width: 140px;
+      height: 140px; }
   .presentation .p3 {
     color: var(--clr-red); }
+    .presentation .p3_img {
+      top: 110px;
+      left: 50px;
+      z-index: -10;
+      width: 68px;
+      height: 72px; }
   .presentation .p4 {
     color: var(--clr-green);
     display: block !important; }
+    .presentation .p4_img {
+      top: -5px;
+      left: 220px;
+      z-index: -10;
+      width: 68px;
+      height: 72px; }
   .presentation .p5 {
     margin-top: 70px;
     color: var(--clr-yellow);
