@@ -1,7 +1,5 @@
 .presentation {
   padding-top: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
 
   @include fullscreen;
   background: linear-gradient(
@@ -17,6 +15,10 @@
       rgba(115, 4, 255, 0.5) 72.07%
     ),
     color(purple);
+  &_container {
+    width: 298px;
+    margin: 0 auto;
+  }
 
   & p {
     position: relative;
@@ -33,7 +35,7 @@
   }
   & .p1 {
     color: color(green);
-    margin-right: 6px;
+    padding-right: 6px;
 
     &_img1 {
       top: 23px;

@@ -129,19 +129,10 @@ const vendors = () =>
     .pipe(gulp.dest(paths.vendors.dest))
 
 // Copy and minify images
-const images = () =>
-  gulp
-    .src(paths.images.src)
-    .pipe(plumber())
-    .pipe(imagemin())
-    .pipe(gulp.dest(paths.images.dest))
+const images = () => gulp.src(paths.images.src).pipe(plumber()).pipe(imagemin()).pipe(gulp.dest(paths.images.dest))
 
 // Copy the favicon
-const favicon = () =>
-  gulp
-    .src(paths.favicon.src)
-    .pipe(plumber())
-    .pipe(gulp.dest(paths.favicon.dest))
+const favicon = () => gulp.src(paths.favicon.src).pipe(plumber()).pipe(gulp.dest(paths.favicon.dest))
 
 // Watches all .scss, .js and .html changes and executes the corresponding task
 function watchFiles() {
@@ -161,11 +152,7 @@ function watchFiles() {
   gulp.watch(paths.images.src, images).on('change', browserSync.reload)
 }
 
-const build = gulp.series(
-  clean,
-  gulp.parallel(html, styles, vendors, scripts, images),
-  cacheBust
-)
+const build = gulp.series(clean, gulp.parallel(html, styles, vendors, scripts, images), cacheBust)
 
 const watch = gulp.series(build, watchFiles)
 

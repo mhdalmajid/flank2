@@ -22,7 +22,7 @@
   </head>
   <body>
     <script src="https://apis.google.com/js/api:client.js"></script>
-    <script>
+    <!-- <script>
       let googleUser = {}
       let startApp = function () {
         gapi.load('auth2', function () {
@@ -50,7 +50,7 @@
           }
         )
       }
-    </script>
+    </script> -->
     <!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -58,14 +58,7 @@
       </p>
     <![endif]-->
     <!--? ********  if javscript is disabled *************-->
-    <noscript>
-      <style type="text/css">
-        .pagecontainer {
-          display: none;
-        }
-      </style>
-      <noscript> You don't have javascript enabled or Your browser doesn't support JavaScript </noscript>
-    </noscript>
+    <noscript> You don't have javascript enabled or Your browser doesn't support JavaScript </noscript>
     <!--? ******** content for big screen  ************* -->
     <div class="desktop">
       <div class="patreon">
@@ -107,26 +100,28 @@
     </section>
     <!--? ******** presentation layout  &nbsp;&nbsp; ************* -->
     <section class="presentation">
-      <p class="p1">
-        flank is for friends who can count on each
-        <img class="peach p1_img1" src="assets/images/peach-slap.gif" alt="peach-slap" />
-        <img class="tab_that p1_img2" src="assets/images/TapThat__1_-removebg-preview.png" alt="tap that" />
-        other
-      </p>
-      <p class="p2">
-        like when you borrow 5 for chips at midnight or
-        <img class="p2_img" src="assets/images/giphy-6--unscreen.gif" alt="giphy-6" />
-      </p>
-      <p class="p3">
-        when you lend a friend 40 coz sister owes them 80
-        <img class="p3_img" src="assets/images/bouncing-parrot.gif" alt="bouncing-parrot" />
-      </p>
-      <p class="p4">
-        flank is for giving without losing again
-        <img class="p4_img" src="assets/images/shake-it-off.gif" alt="bouncing-parrot" />
-      </p>
-      <p class="p5">we flank so we can just be friends</p>
-      <div class="p6 presentation_arrow"></div>
+      <div class="presentation_container">
+        <p class="p1">
+          flank is for friends who can count on each
+          <img class="peach p1_img1" src="./assets/images/peach-slap.gif" alt="peach-slap" />
+          <img class="tab_that p1_img2" src="./assets/images/TapThat__1_-removebg-preview.png" alt="tap that" />
+          other
+        </p>
+        <p class="p2">
+          like when you borrow 5 for chips at midnight or
+          <img class="p2_img" src="./assets/images/giphy-6--unscreen.gif" alt="giphy-6" />
+        </p>
+        <p class="p3">
+          when you lend a friend 40 coz sister owes them 80
+          <img class="p3_img" src="./assets/images/bouncing-parrot.gif" alt="bouncing-parrot" />
+        </p>
+        <p class="p4">
+          flank is for giving without losing again
+          <img class="p4_img" src="./assets/images/shake-it-off.gif" alt="bouncing-parrot" />
+        </p>
+        <p class="p5">we flank so we can just be friends</p>
+        <div class="p6 presentation_arrow"></div>
+      </div>
     </section>
     <!--? ******** contact layout ************* -->
     <section class="contact">
@@ -164,7 +159,7 @@
     </section>
     <!--? ******** scripts goes here depend on pryority  ************* -->
     <script>
-      startApp()
+      // startApp()
     </script>
     <script src="./assets/js/app.js"></script>
     <!-- <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
