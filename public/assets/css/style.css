@@ -322,7 +322,8 @@ body {
   margin: 0;
   color: #222;
   font-family: Barlow, Helvetica, sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  user-select: none; }
 
 @media (max-width: 414.9px) {
   .desktop {
@@ -504,7 +505,7 @@ body {
   .about_flank-small {
     color: var(--clr-purple); }
   .about_flank-big-to-small-animation {
-    top: 30px;
+    top: 40px;
     font-size: 33px; }
   .about_flank-larg {
     margin-top: 20px;
@@ -585,7 +586,7 @@ body {
       width: 68px;
       height: 72px; }
   .presentation .p5 {
-    margin-top: 70px;
+    margin-top: 45px;
     color: var(--clr-yellow);
     display: block !important; }
   .presentation_arrow {
@@ -701,6 +702,7 @@ body {
   border: none;
   border-radius: 8px;
   text-align: center;
+  padding: 10px 0;
   color: rgba(48, 49, 49, 0.8); }
 
 #customBtn:hover {
@@ -711,13 +713,13 @@ span.label {
   font-weight: normal; }
 
 span.icon {
-  background: url("./../../assets/images/g-normal.png") no-repeat;
+  background: url("./../../assets/images/google_icon.svg") no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
-  width: 50px;
-  height: 50px; }
+  width: 30px;
+  height: 30px; }
 
 span.buttonText {
   display: inline-block;

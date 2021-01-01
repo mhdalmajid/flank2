@@ -5,7 +5,6 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  // overflow-x: hidden;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
   color: #222;
   font-family: Barlow, Helvetica, sans-serif;
   overflow-x: hidden;
+  user-select: none;
 }
 
 @media (max-width: 414.9px) {

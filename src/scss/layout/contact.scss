@@ -134,7 +134,7 @@
   border: none;
   border-radius: 8px;
   text-align: center;
-
+  padding: 10px 0;
   color: rgba(48, 49, 49, 0.8);
 }
 #customBtn:hover {
@@ -145,13 +145,13 @@ span.label {
   font-weight: normal;
 }
 span.icon {
-  background: url('./../../assets/images/g-normal.png') no-repeat;
+  background: url('./../../assets/images/google_icon.svg') no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   display: inline-block;
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 span.buttonText {
   display: inline-block;
