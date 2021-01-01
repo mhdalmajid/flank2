@@ -15,3 +15,24 @@ body {
   font-family: Barlow, Helvetica, sans-serif;
   overflow-x: hidden;
 }
+
+@media (max-width: 414.9px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 414.9px) {
+  .about {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .presentation {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
