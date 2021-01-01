@@ -520,7 +520,7 @@ body {
     font-size: 30px; }
 
 .presentation {
-  padding-top: 30px;
+  padding-top: 50px;
   position: relative;
   min-width: 100%;
   width: 100%;
@@ -612,7 +612,7 @@ body {
 
 .contact {
   position: relative;
-  padding-top: 87px;
+  padding-top: 50px;
   padding-left: 25px;
   padding-right: 25px;
   min-width: 100%;
@@ -655,8 +655,19 @@ body {
     font-weight: 500;
     font-size: 30px; }
   .contact_form .submit {
+    margin-bottom: 0 !important;
     color: #ffffff !important;
     background: linear-gradient(346.29deg, rgba(254, 0, 101, 0.2) 11.66%, rgba(255, 255, 255, 0.112) 37.63%, rgba(255, 255, 255, 0.106) 95.28%), linear-gradient(11.28deg, rgba(115, 4, 255, 0.5) 23.66%, rgba(101, 37, 225, 0.5) 51.04%, rgba(115, 4, 255, 0.5) 72.07%), var(--clr-purple); }
+  .contact .or_container span {
+    padding: 0 0 5px 0;
+    display: block;
+    text-align: center;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--clr-purple); }
 
 @keyframes rotate {
   0% {
@@ -700,11 +711,13 @@ span.label {
   font-weight: normal; }
 
 span.icon {
-  background: url("./../../assets/images/g-normal.png") 5px 50% no-repeat;
+  background: url("./../../assets/images/g-normal.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: inline-block;
   vertical-align: middle;
-  width: 42px;
-  height: 42px; }
+  width: 50px;
+  height: 50px; }
 
 span.buttonText {
   display: inline-block;

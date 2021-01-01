@@ -1,6 +1,6 @@
 .contact {
   position: relative;
-  padding-top: 87px;
+  padding-top: 50px;
   padding-left: 25px;
   padding-right: 25px;
   @include fullscreen;
@@ -50,6 +50,7 @@
     font-size: 30px;
   }
   &_form .submit {
+    margin-bottom: 0 !important;
     color: #ffffff !important;
     background: linear-gradient(
         346.29deg,
@@ -64,6 +65,17 @@
         rgba(115, 4, 255, 0.5) 72.07%
       ),
       color(purple);
+  }
+  & .or_container span {
+    padding: 0 0 5px 0;
+    display: block;
+    text-align: center;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: color(purple);
   }
 }
 // #my-signin2 > div {
@@ -133,11 +145,13 @@ span.label {
   font-weight: normal;
 }
 span.icon {
-  background: url('./../../assets/images/g-normal.png') 5px 50% no-repeat;
+  background: url('./../../assets/images/g-normal.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: inline-block;
   vertical-align: middle;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 }
 span.buttonText {
   display: inline-block;
