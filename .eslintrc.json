@@ -19,6 +19,7 @@
     "no-unused-vars": "off",
     "no-plusplus": "off",
     "prefer-const": "off",
+    "no-restricted-globals": "off",
     // "linebreak-style": "off"
     "prettier/prettier": [
       "error",

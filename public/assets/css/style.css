@@ -318,6 +318,8 @@ template {
   box-sizing: border-box; }
 
 body {
+  position: relative;
+  margin: 0;
   color: #222;
   font-family: Barlow, Helvetica, sans-serif;
   overflow-x: hidden; }
@@ -332,8 +334,7 @@ body {
   visibility: visible; }
 
 .hidden {
-  opacity: 0;
-  visibility: hidden; }
+  opacity: 0 !important; }
 
 .displayNone {
   display: none; }
@@ -359,7 +360,7 @@ body {
 
 .desktop {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding-top: 100px;
   background: linear-gradient(113.97deg, var(--clr-purple) 30.44%, rgba(255, 255, 255, 0.169) 69.5%), linear-gradient(180deg, var(--clr-green) 22.64%, var(--clr-purple) 76.56%); }
@@ -401,16 +402,19 @@ body {
     color: var(--clr-green); }
 
 .header {
-  padding-top: 30px;
+  top: 0;
   padding-left: 25px;
   padding-right: 25px;
-  position: relative;
-  width: 100%;
+  transition-duration: 300ms;
+  position: fixed;
   min-width: 100%;
+  width: 100%;
+  -min-height: 667px;
   height: 100vh;
   background: linear-gradient(113.97deg, var(--clr-purple) 30.44%, rgba(255, 255, 255, 0.17) 69.5%), linear-gradient(180deg, var(--clr-green) 22.64%, var(--clr-purple) 100%); }
   .header_flank-small {
     color: var(--clr-green);
+    padding-top: 30px;
     text-align: center;
     font-weight: bold;
     font-size: 33px; }
@@ -440,7 +444,7 @@ body {
     line-height: 36px; }
   .header_arrow {
     position: absolute;
-    top: 87%;
+    bottom: 80px;
     left: 50%;
     width: 40px;
     height: 40px;
@@ -462,24 +466,35 @@ body {
 @keyframes rise {
   0% {
     opacity: 1;
-    transform: translateY(30%); }
+    bottom: 80px; }
   100% {
     opacity: 1;
-    transform: translateY(0%); } }
+    bottom: 100px; } }
 
 .about {
-  padding-top: 30px;
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 30px;
   position: relative;
-  width: 100%;
   min-width: 100%;
+  width: 100%;
+  -min-height: 667px;
   height: 100vh;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0) 40.67%, rgba(255, 255, 255, 0.2) 61.59%), linear-gradient(170.66deg, rgba(42, 253, 46, 0.45) 24.51%, rgba(42, 253, 46, 0.155) 55.06%), #fbff4a; }
   .about_flank-small {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    color: var(--clr-green);
     text-align: center;
-    color: var(--clr-purple);
     font-weight: bold;
+    transition-duration: 250ms;
+    transform: translate(-50%, -50%);
+    font-size: 100px; }
+  .about_flank-small {
+    color: var(--clr-purple); }
+  .about_flank-big-to-small-animation {
+    top: 30px;
     font-size: 33px; }
   .about_flank-larg {
     margin-top: 20px;
@@ -497,8 +512,9 @@ body {
 .presentation {
   padding-top: 30px;
   position: relative;
-  width: 100%;
   min-width: 100%;
+  width: 100%;
+  -min-height: 667px;
   height: 100vh;
   background: linear-gradient(346.29deg, rgba(254, 0, 101, 0.2) 11.66%, rgba(255, 255, 255, 0.112) 37.63%, rgba(255, 255, 255, 0.106) 95.28%), linear-gradient(11.28deg, rgba(115, 4, 255, 0.5) 23.66%, rgba(101, 37, 225, 0.5) 51.04%, rgba(115, 4, 255, 0.5) 72.07%), var(--clr-purple); }
   .presentation_container {
@@ -563,11 +579,13 @@ body {
     color: var(--clr-yellow);
     display: block !important; }
   .presentation_arrow {
-    position: absolute;
-    top: 87%;
-    left: 50%;
     width: 40px;
     height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
     animation-name: rise;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
@@ -577,19 +595,19 @@ body {
     display: block;
     width: 40px;
     height: 40px;
-    margin-left: -10px;
-    transform: translate(-50%, -50%);
+    transform: rotate(-45deg);
+    transform: rotate(-45deg);
     border-left: 8px solid #2afd2e;
-    border-bottom: 8px solid #2afd2e;
-    transform: rotate(-45deg); }
+    border-bottom: 8px solid #2afd2e; }
 
 .contact {
+  position: relative;
   padding-top: 87px;
   padding-left: 25px;
   padding-right: 25px;
-  position: relative;
-  width: 100%;
   min-width: 100%;
+  width: 100%;
+  -min-height: 667px;
   height: 100vh;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0) 40.67%, rgba(255, 255, 255, 0.2) 61.59%), linear-gradient(170.66deg, rgba(42, 253, 46, 0.45) 24.51%, rgba(42, 253, 46, 0.155) 55.06%), var(--clr-yellow); }
   .contact p {

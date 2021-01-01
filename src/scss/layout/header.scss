@@ -1,14 +1,19 @@
 .header {
-  padding-top: 30px;
+  top: 0;
   padding-left: 25px;
   padding-right: 25px;
+
+  transition-duration: 300ms;
+
+  position: fixed;
+
   @include fullscreen;
 
   background: linear-gradient(113.97deg, color(purple) 30.44%, rgba(255, 255, 255, 0.17) 69.5%),
     linear-gradient(180deg, color(green) 22.64%, color(purple) 100%);
   &_flank-small {
     color: color(green);
-
+    padding-top: 30px;
     text-align: center;
     font-weight: bold;
     font-size: 33px;
@@ -43,7 +48,7 @@
   }
   &_arrow {
     position: absolute;
-    top: 87%;
+    bottom: 80px;
     left: 50%;
     width: 40px;
     height: 40px;
@@ -68,11 +73,11 @@
 @keyframes rise {
   0% {
     opacity: 1;
-    transform: translateY(30%);
+    bottom: 80px;
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    bottom: 100px;
   }
 }

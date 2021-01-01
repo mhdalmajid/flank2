@@ -1,6 +1,6 @@
 @mixin fullscreen {
-  position: relative;
-  width: 100%;
   min-width: 100%;
+  width: 100%;
+  -min-height: 667px;
   height: 100vh;
 }

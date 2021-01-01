@@ -1,6 +1,6 @@
 .presentation {
   padding-top: 30px;
-
+  position: relative;
   @include fullscreen;
   background: linear-gradient(
       346.29deg,
@@ -94,11 +94,13 @@
   }
 
   &_arrow {
-    position: absolute;
-    top: 87%;
-    left: 50%;
     width: 40px;
     height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
     animation-name: rise;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
@@ -109,10 +111,9 @@
     display: block;
     width: 40px;
     height: 40px;
-    margin-left: -10px;
-    transform: translate(-50%, -50%);
+    transform: rotate(-45deg);
+    transform: rotate(-45deg);
     border-left: 8px solid #2afd2e;
     border-bottom: 8px solid #2afd2e;
-    transform: rotate(-45deg);
   }
 }

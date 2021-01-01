@@ -1,17 +1,33 @@
 .about {
-  padding-top: 30px;
   padding-left: 25px;
   padding-right: 25px;
-
+  padding-top: 30px;
+  position: relative;
   @include fullscreen;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0) 40.67%, rgba(255, 255, 255, 0.2) 61.59%),
     linear-gradient(170.66deg, rgba(42, 253, 46, 0.45) 24.51%, rgba(42, 253, 46, 0.155) 55.06%), #fbff4a;
 
   &_flank-small {
+    position: absolute;
+
+    left: 50%;
+    top: 44%;
+    color: color(green);
+
     text-align: center;
-    color: color(purple);
 
     font-weight: bold;
+    transition-duration: 250ms;
+    transform: translate(-50%, -50%);
+
+    font-size: 100px;
+  }
+  &_flank-small {
+    color: color(purple);
+  }
+
+  &_flank-big-to-small-animation {
+    top: 30px;
     font-size: 33px;
   }
   &_flank-larg {

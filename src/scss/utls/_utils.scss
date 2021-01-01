@@ -18,8 +18,7 @@ $container-xl: 1140px;
   visibility: visible;
 }
 .hidden {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0 !important;
 }
 .displayNone {
   display: none;
