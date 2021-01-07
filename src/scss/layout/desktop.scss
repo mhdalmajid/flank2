@@ -1,20 +1,40 @@
+@media (max-width: 414.9px) {
+  .desktop {
+    display: none;
+  }
+}
+
+// @media (max-width: 800px) and (min-height: 700px) {
+//   .desktop {
+//     padding-top: 100px;
+//   }
+// }
+
 .desktop {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding-top: 100px;
+  // min-height: 700px;
   background: linear-gradient(113.97deg, color(purple) 30.44%, rgba(255, 255, 255, 0.169) 69.5%),
     linear-gradient(180deg, color(green) 22.64%, color(purple) 76.56%);
+
+  & .desktop_wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
   & .patreon {
     width: 262px;
     height: 43px;
-
+    text-align: center;
     margin: 0 auto;
   }
   & .patreon a {
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 7px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
@@ -24,20 +44,19 @@
   }
   & h1 {
     font-weight: bold;
-    font-size: 200px;
+    font-size: 150px;
     margin: 0;
     color: color(green);
   }
   & h2 {
-    top: 463px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 48px;
 
     color: color(green);
   }
   & h3 {
-    margin-top: 100px !important;
+    margin-top: 50px !important;
   }
   & h3,
   & h4 {
@@ -45,11 +64,19 @@
     font-family: Barlow;
     line-height: 45.6px;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 33px;
 
     color: #ffffff;
   }
   & h4 > span {
     color: color(green);
+  }
+  & .qr_code {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+  }
+  & .qr_code > img {
+    width: 100%;
   }
 }

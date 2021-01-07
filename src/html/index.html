@@ -15,8 +15,11 @@
     <!-- <meta name="theme-color" content="#fafafa" /> -->
     <!-- ? ********  FONTS ************* -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet" />
     <!--? ********  stylesheet *************-->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -61,17 +64,19 @@
     <noscript> You don't have javascript enabled or Your browser doesn't support JavaScript </noscript>
     <!--? ******** content for big screen  ************* -->
     <div class="desktop">
-      <div class="patreon">
-        <a href="https://www.patreon.com/flank">patreon</a>
-      </div>
-      <div class="flank">
-        <h1>flank</h1>
-        <h2>so we can just be friends</h2>
-        <h3>We’ll be blazing up the big screen soon.</h3>
-        <h4>
-          For now,
-          <span>check your videophone.</span>
-        </h4>
+      <div class="desktop_wrapper">
+        <div class="patreon">
+          <a href="https://www.patreon.com/flank">patreon</a>
+        </div>
+        <div class="flank">
+          <h1>flank</h1>
+          <h2>so we can just be friends</h2>
+          <h3>We’ll be blazing up the big screen soon.</h3>
+          <h4>For now, check your videophone.</h4>
+        </div>
+        <div class="qr_code">
+          <img src="./assets/images/qr_code.png" alt="qr_code" />
+        </div>
       </div>
     </div>
     <!--? ******** content for small screen viewPort max-width 414px ************* -->
@@ -80,13 +85,13 @@
       <div class="about_flank-small flank-small">flank</div>
       <div class="about_flank-larg">flank</div>
       <div class="about_body">
-        <p class="about_p-first">[fláŋk]&nbsp;<i>/n /v /!?!</i></p>
+        <p class="about_p-first">[fláŋk]&nbsp;<i>/n/v/!?!</i></p>
         <p>
           <b>1</b>&nbsp;a chill appy thing dedicated to helping people lend, borrow and give money with their friends
           and family
         </p>
-        <p>2 the rise of the generosity economy</p>
-        <p>3 “oh flank that feels so good” - Your wildest dreams</p>
+        <p><b>2</b>&nbsp;the rise of the generosity economy</p>
+        <p><b>3</b>&nbsp;“oh flank that feels so good” - <span class="text-25">Your wildest dreams</span></p>
       </div>
     </section>
     <!--? ******** header layout ************* -->
@@ -155,16 +160,17 @@
         <input type="email" name="EMAIL" id="email" placeholder="email" required />
         <input class="submit" type="submit" value="submit" />
         <div class="or_container"><span>or</span></div>
+        <div id="gSignInWrapper">
+          <div id="customBtn" class="customGPlusSignIn">
+            <span class="icon"></span>
+            <span class="buttonText">Sign Up with Google</span>
+          </div>
+        </div>
+        <!-- <p class="privacy">We respect your privacy.</p> -->
       </form>
 
       <!-- <div id="my-signin2"></div> -->
 
-      <div id="gSignInWrapper">
-        <div id="customBtn" class="customGPlusSignIn">
-          <span class="icon"></span>
-          <span class="buttonText">Sign Up with Google</span>
-        </div>
-      </div>
       <!-- </div> -->
     </section>
     <!--? ******** scripts goes here depend on pryority  ************* -->

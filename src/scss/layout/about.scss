@@ -31,21 +31,25 @@
     font-size: 33px;
   }
   &_flank-larg {
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Lora';
     font-size: 60px;
-
+    font-weight: 600;
     color: #7304ff;
   }
 
   &_body {
     color: color(purple);
     font-family: 'Lora';
-    font-weight: 400;
-    font-size: 24px;
+    // font-weight: 400 !important;
+    font-size: 25px;
     line-height: 32px;
   }
   &_p-first {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  & .text-25 {
+    font-size: 20px;
+    font-style: italic;
   }
 }

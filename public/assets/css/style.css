@@ -325,10 +325,6 @@ body {
   overflow-x: hidden;
   user-select: none; }
 
-@media (max-width: 414.9px) {
-  .desktop {
-    display: none; } }
-
 @media (min-width: 600px) {
   .about {
     display: none; }
@@ -369,20 +365,30 @@ body {
 .text-center {
   text-align: center; }
 
+@media (max-width: 414.9px) {
+  .desktop {
+    display: none; } }
+
 .desktop {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding-top: 100px;
   background: linear-gradient(113.97deg, var(--clr-purple) 30.44%, rgba(255, 255, 255, 0.169) 69.5%), linear-gradient(180deg, var(--clr-green) 22.64%, var(--clr-purple) 76.56%); }
+  .desktop .desktop_wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
   .desktop .patreon {
     width: 262px;
     height: 43px;
+    text-align: center;
     margin: 0 auto; }
   .desktop .patreon a {
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 7px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none; }
@@ -390,27 +396,32 @@ body {
     text-align: center; }
   .desktop h1 {
     font-weight: bold;
-    font-size: 200px;
+    font-size: 150px;
     margin: 0;
     color: var(--clr-green); }
   .desktop h2 {
-    top: 463px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 48px;
     color: var(--clr-green); }
   .desktop h3 {
-    margin-top: 100px !important; }
+    margin-top: 50px !important; }
   .desktop h3,
   .desktop h4 {
     margin: 0;
     font-family: Barlow;
     line-height: 45.6px;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 33px;
     color: #ffffff; }
   .desktop h4 > span {
     color: var(--clr-green); }
+  .desktop .qr_code {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto; }
+  .desktop .qr_code > img {
+    width: 100%; }
 
 .header {
   top: 0;
@@ -508,18 +519,21 @@ body {
     top: 40px;
     font-size: 33px; }
   .about_flank-larg {
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Lora';
     font-size: 60px;
+    font-weight: 600;
     color: #7304ff; }
   .about_body {
     color: var(--clr-purple);
     font-family: 'Lora';
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 32px; }
   .about_p-first {
-    font-size: 30px; }
+    font-size: 25px; }
+  .about .text-25 {
+    font-size: 20px;
+    font-style: italic; }
 
 .presentation {
   padding-top: 50px;
