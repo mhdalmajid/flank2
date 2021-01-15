@@ -431,7 +431,7 @@ body {
   position: fixed;
   min-width: 100%;
   width: 100%;
-  -min-height: 667px;
+  -min-height: 100vh;
   height: 100vh;
   background: linear-gradient(113.97deg, var(--clr-purple) 30.44%, rgba(255, 255, 255, 0.17) 69.5%), linear-gradient(180deg, var(--clr-green) 22.64%, var(--clr-purple) 100%); }
   .header_flank-small {
@@ -514,7 +514,7 @@ body {
   position: relative;
   min-width: 100%;
   width: 100%;
-  -min-height: 667px;
+  -min-height: 100vh;
   height: 100vh;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0) 40.67%, rgba(255, 255, 255, 0.2) 61.59%), linear-gradient(170.66deg, rgba(42, 253, 46, 0.45) 24.51%, rgba(42, 253, 46, 0.155) 55.06%), #fbff4a; }
   .about_flank-small {
@@ -554,7 +554,7 @@ body {
   position: relative;
   min-width: 100%;
   width: 100%;
-  -min-height: 667px;
+  -min-height: 100vh;
   height: 100vh;
   background: linear-gradient(346.29deg, rgba(254, 0, 101, 0.2) 11.66%, rgba(255, 255, 255, 0.112) 37.63%, rgba(255, 255, 255, 0.106) 95.28%), linear-gradient(11.28deg, rgba(115, 4, 255, 0.5) 23.66%, rgba(101, 37, 225, 0.5) 51.04%, rgba(115, 4, 255, 0.5) 72.07%), var(--clr-purple); }
   .presentation_container {
@@ -647,7 +647,7 @@ body {
   padding-right: 25px;
   min-width: 100%;
   width: 100%;
-  -min-height: 667px;
+  -min-height: 100vh;
   height: 100vh;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0) 40.67%, rgba(255, 255, 255, 0.2) 61.59%), linear-gradient(170.66deg, rgba(42, 253, 46, 0.45) 24.51%, rgba(42, 253, 46, 0.155) 55.06%), var(--clr-yellow); }
   .contact p {
