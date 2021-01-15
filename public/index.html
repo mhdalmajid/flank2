@@ -1,31 +1,40 @@
-<!DOCTYPE html><html class="no-js" lang=""><head><meta charset="utf-8"><title>flank</title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-signin-client_id" content="173385212213-0atq8ct8ve57568f5tuj738mnbbnfhev.apps.googleusercontent.com"><link rel="apple-touch-icon" href="icon.png"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/css/style.css"></head><body><script src="https://apis.google.com/js/api:client.js"></script><script>var googleUser = {};
-    var startApp = function() {
-      gapi.load('auth2', function(){
-        // Retrieve the singleton for the GoogleAuth library and set up the client.
-        auth2 = gapi.auth2.init({
-          client_id: '173385212213-0atq8ct8ve57568f5tuj738mnbbnfhev.apps.googleusercontent.com',
-          cookiepolicy: 'single_host_origin',
-          // Request scopes in addition to 'profile' and 'email'
-          //scope: 'additional_scope'
-        });
-        attachSignin(document.getElementById('customBtn'));
-      });
-    };
+<!DOCTYPE html><html class="no-js" lang=""><head><meta charset="utf-8"><title>flank</title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-signin-client_id" content="752323774742-vc9501n5npqpn4o8ko0131isc82812i0.apps.googleusercontent.com"><link rel="apple-touch-icon" href="icon.png"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/css/style.css"></head><body><script src="https://apis.google.com/js/api:client.js"></script><script>let googleUser = {}
 
-    function attachSignin(element) {
-      console.log(element.id);
-      auth2.attachClickHandler(element, {},
-          function(googleUser) {
-            //autofill MailChimp form and submit
-            document.getElementById('name').value = googleUser.getBasicProfile().getName();
-            document.getElementById('email').value = googleUser.getBasicProfile().getEmail();
-            document.getElementById('mc-embedded-subscribe-form').submit();
-          }, function(error) {
-            alert(JSON.stringify(error, undefined, 2));
-          });
-    }</script><!--[if IE]>
+      function attachSignin(element) {
+        // eslint-disable-next-line no-undef
+        auth2.attachClickHandler(
+          element,
+          {},
+          // eslint-disable-next-line no-shadow
+          (googleUser) => {
+            // autofill MailChimp form and submit
+            document.getElementById('name').value = googleUser.getBasicProfile().getName()
+            document.getElementById('email').value = googleUser.getBasicProfile().getEmail()
+            document.getElementById('mc-embedded-subscribe-form').submit()
+          },
+          (error) => {
+            // alert(JSON.stringify(error, undefined, 2))
+            console.error(JSON.stringify(error, undefined, 2))
+          }
+        )
+      }
+      let startApp = () => {
+        // eslint-disable-next-line no-undef
+        gapi.load('auth2', () => {
+          // Retrieve the singleton for the GoogleAuth library and set up the client.
+          // eslint-disable-next-line no-undef
+          auth2 = gapi.auth2.init({
+            client_id: '173385212213-0atq8ct8ve57568f5tuj738mnbbnfhev.apps.googleusercontent.com',
+            cookiepolicy: 'single_host_origin',
+            // Request scopes in addition to 'profile' and 'email'
+            // scope: 'additional_scope'
+          })
+          attachSignin(document.getElementById('customBtn'))
+        })
+      }</script><!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
         <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
       </p>
-    <![endif]--><noscript>You don't have javascript enabled or Your browser doesn't support JavaScript</noscript><div class="desktop"><div class="desktop_wrapper"><div class="patreon"><a href="https://www.patreon.com/flank">patreon</a></div><div class="flank"><h1>flank</h1><h2>so we can just be friends</h2><h3>We’ll be blazing up the big screen soon.</h3><h4>For now, check your videophone.</h4></div><div class="qr_code"><img src="./assets/images/qr_code.svg" alt="qr_code"></div></div></div><section class="about"><div class="about_flank-small flank-small">flank</div><div class="about_flank-larg">flank</div><div class="about_body"><p class="about_p-first">[fláŋk]&nbsp;<i>/n/v/!?!</i></p><p><b>1</b>&nbsp;a chill appy thing dedicated to helping people lend, borrow and give money with their friends and family</p><p><b>2</b>&nbsp;the rise of the generosity economy</p><p><b>3</b>&nbsp;“oh flank that feels so good” -<span class="text-25">Your wildest dreams</span></p></div></section><section class="header"><div class="header_flank-small pulse">flank</div><a class="patreon" href="https://www.patreon.com/flank">PATREON</a><div class="header_middle"><h1>flank</h1><h2>so we can just be friends</h2></div><div class="header_arrow"></div></section><section class="presentation"><div class="presentation_container"><p class="p1">flank is for friends who can count on each <img class="peach p1_img1" src="./assets/images/peach-slap.gif" alt="peach-slap"> <img class="tab_that p1_img2" src="./assets/images/TapThat__1_-removebg-preview.png" alt="tap that"> other</p><p class="p2 hidden">like when you borrow 5 for chips at midnight or <img class="p2_img" src="./assets/images/giphy-6--unscreen.gif" alt="giphy-6"></p><p class="p3 hidden">when you lend a friend 40 coz sister owes them 80 <img class="p3_img" src="./assets/images/bouncing-parrot.gif" alt="bouncing-parrot"></p><p class="p4 hidden">flank is for giving without losing again <img class="p4_img" src="./assets/images/shake-it-off.gif" alt="bouncing-parrot"></p><p class="p5 hidden">we flank so we can just be friends</p></div><div class="p6 presentation_arrow hidden"></div></section><section class="contact"><p>We’ll have lots to share with you soooooon.</p><p>You can find us at</p><div class="icons-container"><div class="icon_twitter"><img src="./assets/images/twitter.svg" alt="twitter icon"></div><div class="icon_email"><img src="./assets/images/email.svg" alt="email icon"></div><div class="icon_linkedin"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></div></div><p>Where can we find you?</p><form action="https://gmail.us7.list-manage.com/subscribe/post?u=e3a2d143fb5c5299b8a2d443a&amp;id=e1f0d76730" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate contact_form"><input type="text" name="FNAME" id="name" placeholder="your name"> <input type="email" name="EMAIL" id="email" placeholder="email" required> <input class="submit" type="submit" value="submit"><div class="or_container"><span>or</span></div><div id="gSignInWrapper"><div id="customBtn" class="customGPlusSignIn"><span class="icon"></span><span class="buttonText">Sign Up with Google</span></div></div><script>startApp();</script></form></section><script>// startApp()</script><script src="./assets/js/app.js"></script></body></html>
+    <![endif]--><noscript>You don't have javascript enabled or Your browser doesn't support JavaScript</noscript><div class="desktop"><div class="desktop_wrapper"><div class="patreon"><a href="https://www.patreon.com/flank">patreon</a></div><div class="flank"><h1>flank</h1><h2>so we can just be friends</h2><h3>We’ll be blazing up the big screen soon.</h3><h4>For now, check your videophone.</h4></div><div class="qr_code"><img src="./assets/images/qr_code.svg" alt="qr_code"></div></div></div><section class="about"><div class="about_flank-small flank-small">flank</div><div class="about_flank-larg">flank</div><div class="about_body"><p class="about_p-first">[fláŋk]&nbsp;<i>/n/v/!?!</i></p><p><b>1</b>&nbsp;a chill appy thing dedicated to helping people lend, borrow and give money with their friends and family</p><p><b>2</b>&nbsp;the rise of the generosity economy</p><p><b>3</b>&nbsp;“oh flank that feels so good” -<span class="text-25">Your wildest dreams</span></p></div></section><section class="header"><div class="header_flank-small">flank</div><a class="patreon" href="https://www.patreon.com/flank">PATREON</a><div class="header_middle"><h1>flank</h1><h2>so we can just be friends</h2></div><div class="header_arrow"></div></section><section class="presentation"><div class="presentation_container"><p class="p1">flank is for friends who can count on each <img class="peach p1_img1" src="./assets/images/peach-slap.gif" alt="peach-slap"> <img class="tab_that p1_img2" src="./assets/images/TapThat__1_-removebg-preview.png" alt="tap that"> other</p><p class="p2 hidden">like when you borrow 5 for chips at midnight or <img class="p2_img" src="./assets/images/giphy-6--unscreen.gif" alt="giphy-6"></p><p class="p3 hidden">when you lend a friend 40 coz sister owes them 80 <img class="p3_img" src="./assets/images/bouncing-parrot.gif" alt="bouncing-parrot"></p><p class="p4 hidden">flank is for giving without losing again <img class="p4_img" src="./assets/images/shake-it-off.gif" alt="bouncing-parrot"></p><p class="p5 hidden">we flank so we can just be friends</p></div><div class="p6 presentation_arrow hidden"></div></section><section class="contact"><p>We’ll have lots to share with you soooooon.</p><p>You can find us at</p><div class="icons-container"><a class="icon_twitter" href="https://twitter.com/flankdigital" target="_blank"><img src="./assets/images/twitter.svg" alt="twitter icon"></a><a class="icon_email" href="mailto: youfoundflank@gmail.com" target="_blank"><img src="./assets/images/email.svg" alt="email icon"></a><a class="icon_linkedin" href="https://www.linkedin.com/company/youfoundflank" target="_blank"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a></div><p>Where can we find you?</p><form action="https://gmail.us7.list-manage.com/subscribe/post?u=e3a2d143fb5c5299b8a2d443a&amp;id=e1f0d76730" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate contact_form"><input type="text" name="FNAME" id="name" placeholder="your name"> <input type="email" name="EMAIL" id="email" placeholder="email" required> <input class="submit" type="submit" value="submit"><div class="or_container"><span>or</span></div><div id="gSignInWrapper"><div id="customBtn" class="customGPlusSignIn"><span class="icon"></span><span class="buttonText">Sign Up with Google</span></div></div><script>// eslint-disable-next-line no-undef
+          startApp()</script></form></section><script>// startApp()</script><script src="./assets/js/app.js"></script></body></html>

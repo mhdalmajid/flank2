@@ -5,7 +5,10 @@
     <title>flank</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="google-signin-client_id" content="752323774742-vc9501n5npqpn4o8ko0131isc82812i0.apps.googleusercontent.com">
+    <meta
+      name="google-signin-client_id"
+      content="752323774742-vc9501n5npqpn4o8ko0131isc82812i0.apps.googleusercontent.com"
+    />
     <!-- TODO: site.webmanifest -->
     <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <!-- TODO: create Icon for apple touch -->
@@ -25,32 +28,40 @@
   <body>
     <script src="https://apis.google.com/js/api:client.js"></script>
     <script>
-    var googleUser = {};
-    var startApp = function() {
-      gapi.load('auth2', function(){
-        // Retrieve the singleton for the GoogleAuth library and set up the client.
-        auth2 = gapi.auth2.init({
-          client_id: '173385212213-0atq8ct8ve57568f5tuj738mnbbnfhev.apps.googleusercontent.com',
-          cookiepolicy: 'single_host_origin',
-          // Request scopes in addition to 'profile' and 'email'
-          //scope: 'additional_scope'
-        });
-        attachSignin(document.getElementById('customBtn'));
-      });
-    };
+      let googleUser = {}
 
-    function attachSignin(element) {
-      console.log(element.id);
-      auth2.attachClickHandler(element, {},
-          function(googleUser) {
-            //autofill MailChimp form and submit
-            document.getElementById('name').value = googleUser.getBasicProfile().getName();
-            document.getElementById('email').value = googleUser.getBasicProfile().getEmail();
-            document.getElementById('mc-embedded-subscribe-form').submit();
-          }, function(error) {
-            alert(JSON.stringify(error, undefined, 2));
-          });
-    }
+      function attachSignin(element) {
+        // eslint-disable-next-line no-undef
+        auth2.attachClickHandler(
+          element,
+          {},
+          // eslint-disable-next-line no-shadow
+          (googleUser) => {
+            // autofill MailChimp form and submit
+            document.getElementById('name').value = googleUser.getBasicProfile().getName()
+            document.getElementById('email').value = googleUser.getBasicProfile().getEmail()
+            document.getElementById('mc-embedded-subscribe-form').submit()
+          },
+          (error) => {
+            // alert(JSON.stringify(error, undefined, 2))
+            console.error(JSON.stringify(error, undefined, 2))
+          }
+        )
+      }
+      let startApp = () => {
+        // eslint-disable-next-line no-undef
+        gapi.load('auth2', () => {
+          // Retrieve the singleton for the GoogleAuth library and set up the client.
+          // eslint-disable-next-line no-undef
+          auth2 = gapi.auth2.init({
+            client_id: '173385212213-0atq8ct8ve57568f5tuj738mnbbnfhev.apps.googleusercontent.com',
+            cookiepolicy: 'single_host_origin',
+            // Request scopes in addition to 'profile' and 'email'
+            // scope: 'additional_scope'
+          })
+          attachSignin(document.getElementById('customBtn'))
+        })
+      }
     </script>
     <!--[if IE]>
       <p class="browserupgrade">
@@ -94,7 +105,7 @@
     </section>
     <!--? ******** header layout ************* -->
     <section class="header">
-      <div class="header_flank-small pulse">flank</div>
+      <div class="header_flank-small">flank</div>
       <a class="patreon" href="https://www.patreon.com/flank">PATREON</a>
       <div class="header_middle">
         <h1>flank</h1>
@@ -132,15 +143,15 @@
       <p>We’ll have lots to share with you soooooon.</p>
       <p>You can find us at</p>
       <div class="icons-container">
-        <div class="icon_twitter">
+        <a class="icon_twitter" href="https://twitter.com/flankdigital" target="_blank">
           <!-- todo twitter Icon -->
           <img src="./assets/images/twitter.svg" alt="twitter icon" />
-        </div>
-        <div class="icon_email">
+        </a>
+        <a class="icon_email" href="mailto: youfoundflank@gmail.com" target="_blank">
           <!-- todo Email Icon -->
           <img src="./assets/images/email.svg" alt="email icon" />
-        </div>
-        <div class="icon_linkedin">
+        </a>
+        <a class="icon_linkedin" href="https://www.linkedin.com/company/youfoundflank" target="_blank" >
           <!-- todo icon_linkedin Icon -->
           <img src="./assets/images/linkedin.svg" alt="linkedin icon" />
         </div>
@@ -164,7 +175,10 @@
             <span class="buttonText">Sign Up with Google</span>
           </div>
         </div>
-        <script>startApp();</script>
+        <script>
+          // eslint-disable-next-line no-undef
+          startApp()
+        </script>
         <!-- <p class="privacy">We respect your privacy.</p> -->
       </form>
 
