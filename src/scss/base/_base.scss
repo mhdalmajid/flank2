@@ -6,12 +6,14 @@
   outline: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-family: Barlow, sans-serif;
+}
 body {
   position: relative;
   margin: 0;
   color: #222;
-  font-family: Barlow, Helvetica, sans-serif;
+  font-family: Barlow, sans-serif;
   overflow-x: hidden;
   user-select: none;
 }
