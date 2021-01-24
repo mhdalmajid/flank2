@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <title>flank</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="a chill appy thing dedicated to helping people lend, borrow and give money with their friends
+          and family"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="google-signin-client_id"
@@ -163,15 +167,15 @@
       <p>We’ll have lots to share with you soooooon.</p>
       <p>You can find us at</p>
       <div class="icons-container">
-        <a class="icon_twitter" href="https://twitter.com/flankdigital" target="_blank">
+        <a class="icon_twitter" href="https://twitter.com/flankdigital" target="_blank" rel="noreferrer">
           <!-- todo twitter Icon -->
           <img src="./assets/images/twitter.svg" alt="twitter icon" />
         </a>
-        <a class="icon_email" href="mailto: youfoundflank@gmail.com" target="_blank">
+        <a class="icon_email" href="mailto: youfoundflank@gmail.com" target="_blank" rel="noreferrer">
           <!-- todo Email Icon -->
           <img src="./assets/images/email.svg" alt="email icon" />
         </a>
-        <a class="icon_linkedin" href="https://www.linkedin.com/company/youfoundflank" target="_blank">
+        <a class="icon_linkedin" href="https://www.linkedin.com/company/youfoundflank" target="_blank" rel="noreferrer">
           <!-- todo icon_linkedin Icon -->
           <img src="./assets/images/linkedin.svg" alt="linkedin icon" />
         </a>
@@ -185,8 +189,14 @@
         name="mc-embedded-subscribe-form"
         class="validate contact_form"
       >
-        <input type="text" name="FNAME" id="name" placeholder="your name" />
-        <input type="email" name="EMAIL" id="email" placeholder="email" required />
+        <label for="name">
+          name
+          <input type="text" name="FNAME" id="name" placeholder="your name" />
+        </label>
+        <label for="email">
+          email
+          <input type="email" name="EMAIL" id="email" placeholder="email" required />
+        </label>
         <input class="submit" type="submit" value="submit" />
         <div class="or_container"><span>or</span></div>
         <div id="gSignInWrapper">
@@ -201,9 +211,6 @@
         </script>
         <!-- <p class="privacy">We respect your privacy.</p> -->
       </form>
-
-      <!-- <div id="my-signin2"></div> -->
-
       <!-- </div> -->
     </section>
     <!--? ******** scripts goes here depend on pryority  ************* -->

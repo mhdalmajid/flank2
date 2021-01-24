@@ -1,4 +1,58 @@
-<!DOCTYPE html><html class="no-js" lang=""><head><meta charset="utf-8"><title>flank</title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-signin-client_id" content="752323774742-vc9501n5npqpn4o8ko0131isc82812i0.apps.googleusercontent.com"><link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png"><link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/css/style.css"></head><body><script src="https://apis.google.com/js/api:client.js"></script><script>let googleUser = {}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>flank</title>
+    <meta
+      name="description"
+      content="a chill appy thing dedicated to helping people lend, borrow and give money with their friends
+          and family"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-signin-client_id"
+      content="752323774742-vc9501n5npqpn4o8ko0131isc82812i0.apps.googleusercontent.com"
+    />
+    <!-- ? ********  favicon ************* -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png" />
+
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
+
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png" />
+
+    <!-- theme-color-->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ? ********  FONTS ************* -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet" /> -->
+    <!--? ********  stylesheet *************-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script>
+      let googleUser = {}
 
       function attachSignin(element) {
         // eslint-disable-next-line no-undef
@@ -31,10 +85,140 @@
           })
           attachSignin(document.getElementById('customBtn'))
         })
-      }</script><!--[if IE]>
+      }
+    </script>
+    <!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
         <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
       </p>
-    <![endif]--><noscript>You don't have javascript enabled or Your browser doesn't support JavaScript</noscript><div class="desktop"><div class="desktop_wrapper"><div class="patreon"><a href="https://www.patreon.com/flank">patreon</a></div><div class="flank"><h1>flank</h1><h2>so we can just be friends</h2><h3>We’ll be blazing up the big screen soon.</h3><h4>For now, check your videophone.</h4></div><div class="qr_code"><img src="./assets/images/qr_code.svg" alt="qr_code"></div></div></div><section class="about"><div class="about_flank-small flank-small">flank</div><div class="about_flank-larg">flank</div><div class="about_body"><p class="about_p-first">[fláŋk]&nbsp;<i>/n/v/!?!</i></p><p><b>1</b>&nbsp;a chill appy thing dedicated to helping people lend, borrow and give money with their friends and family</p><p><b>2</b>&nbsp;the rise of the generosity economy</p><p><b>3</b>&nbsp;“oh flank that feels so good” -<span class="text-25">Your wildest dreams</span></p></div></section><section class="header"><div class="header_flank-small">flank</div><a class="patreon" href="https://www.patreon.com/flank">PATREON</a><div class="header_middle"><h1>flank</h1><h2>so we can just be friends</h2></div><div class="header_arrow"></div></section><section class="presentation"><div class="presentation_container"><p class="p1">flank is for friends who can count on each <img class="peach p1_img1" src="./assets/images/peach-slap.gif" alt="peach-slap"> <img class="tab_that p1_img2" src="./assets/images/TapThat__1_-removebg-preview.png" alt="tap that"> other</p><p class="p2 hidden">like when you borrow 5 for chips at midnight or <img class="p2_img" src="./assets/images/giphy-6--unscreen.gif" alt="giphy-6"></p><p class="p3 hidden">when you lend a friend 40 coz sister owes them 80 <img class="p3_img" src="./assets/images/bouncing-parrot.gif" alt="bouncing-parrot"></p><p class="p4 hidden">flank is for giving without losing again <img class="p4_img" src="./assets/images/shake-it-off.gif" alt="bouncing-parrot"></p><p class="p5 hidden">we flank so we can just be friends</p></div><div class="p6 presentation_arrow hidden"></div></section><section class="contact"><p>We’ll have lots to share with you soooooon.</p><p>You can find us at</p><div class="icons-container"><a class="icon_twitter" href="https://twitter.com/flankdigital" target="_blank"><img src="./assets/images/twitter.svg" alt="twitter icon"></a><a class="icon_email" href="mailto: youfoundflank@gmail.com" target="_blank"><img src="./assets/images/email.svg" alt="email icon"></a><a class="icon_linkedin" href="https://www.linkedin.com/company/youfoundflank" target="_blank"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a></div><p>Where can we find you?</p><form action="https://gmail.us7.list-manage.com/subscribe/post?u=e3a2d143fb5c5299b8a2d443a&amp;id=e1f0d76730" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate contact_form"><input type="text" name="FNAME" id="name" placeholder="your name"> <input type="email" name="EMAIL" id="email" placeholder="email" required> <input class="submit" type="submit" value="submit"><div class="or_container"><span>or</span></div><div id="gSignInWrapper"><div id="customBtn" class="customGPlusSignIn"><span class="icon"></span><span class="buttonText">Sign Up with Google</span></div></div><script>// eslint-disable-next-line no-undef
-          startApp()</script></form></section><script>// startApp()</script><script src="./assets/js/app.js"></script></body></html>
+    <![endif]-->
+    <!--? ********  if javscript is disabled *************-->
+    <noscript> You don't have javascript enabled or Your browser doesn't support JavaScript </noscript>
+    <!--? ******** content for big screen  ************* -->
+    <div class="desktop">
+      <div class="desktop_wrapper">
+        <div class="patreon">
+          <a href="https://www.patreon.com/flank">patreon</a>
+        </div>
+        <div class="flank">
+          <h1>flank</h1>
+          <h2>so we can just be friends</h2>
+          <h3>We’ll be blazing up the big screen soon.</h3>
+          <h4>For now, check your videophone.</h4>
+        </div>
+        <div class="qr_code">
+          <img src="./assets/images/qr_code.svg" alt="qr_code" />
+        </div>
+      </div>
+    </div>
+    <!--? ******** content for small screen viewPort max-width 414px ************* -->
+    <!--? ******** about layout ************* -->
+    <section class="about">
+      <div class="about_flank-small flank-small">flank</div>
+      <div class="about_flank-larg">flank</div>
+      <div class="about_body">
+        <p class="about_p-first">[fláŋk]&nbsp;<i>/n/v/!?!</i></p>
+        <p>
+          <b>1</b>&nbsp;a chill appy thing dedicated to helping people lend, borrow and give money with their friends
+          and family
+        </p>
+        <p><b>2</b>&nbsp;the rise of the generosity economy</p>
+        <p><b>3</b>&nbsp;“oh flank that feels so good” - <span class="text-25">Your wildest dreams</span></p>
+      </div>
+    </section>
+    <!--? ******** header layout ************* -->
+    <section class="header">
+      <div class="header_flank-small">flank</div>
+      <a class="patreon" href="https://www.patreon.com/flank">PATREON</a>
+      <div class="header_middle">
+        <h1>flank</h1>
+        <h2>so we can just be friends</h2>
+      </div>
+      <div class="header_arrow"></div>
+    </section>
+    <!--? ******** presentation layout  &nbsp;&nbsp; ************* -->
+    <section class="presentation">
+      <div class="presentation_container">
+        <p class="p1">
+          flank is for friends who can count on each
+          <img class="peach p1_img1" src="./assets/images/peach-slap.gif" alt="peach-slap" />
+          <img class="tab_that p1_img2" src="./assets/images/TapThat__1_-removebg-preview.png" alt="tap that" />
+          other
+        </p>
+        <p class="p2 hidden">
+          like when you borrow 5 for chips at midnight or
+          <img class="p2_img" src="./assets/images/giphy-6--unscreen.gif" alt="giphy-6" />
+        </p>
+        <p class="p3 hidden">
+          when you lend a friend 40 coz sister owes them 80
+          <img class="p3_img" src="./assets/images/bouncing-parrot.gif" alt="bouncing-parrot" />
+        </p>
+        <p class="p4 hidden">
+          flank is for giving without losing again
+          <img class="p4_img" src="./assets/images/shake-it-off.gif" alt="bouncing-parrot" />
+        </p>
+        <p class="p5 hidden">we flank so we can just be friends</p>
+      </div>
+      <div class="p6 presentation_arrow hidden"></div>
+    </section>
+    <!--? ******** contact layout ************* -->
+    <section class="contact">
+      <p>We’ll have lots to share with you soooooon.</p>
+      <p>You can find us at</p>
+      <div class="icons-container">
+        <a class="icon_twitter" href="https://twitter.com/flankdigital" target="_blank" rel="noreferrer">
+          <!-- todo twitter Icon -->
+          <img src="./assets/images/twitter.svg" alt="twitter icon" />
+        </a>
+        <a class="icon_email" href="mailto: youfoundflank@gmail.com" target="_blank" rel="noreferrer">
+          <!-- todo Email Icon -->
+          <img src="./assets/images/email.svg" alt="email icon" />
+        </a>
+        <a class="icon_linkedin" href="https://www.linkedin.com/company/youfoundflank" target="_blank" rel="noreferrer">
+          <!-- todo icon_linkedin Icon -->
+          <img src="./assets/images/linkedin.svg" alt="linkedin icon" />
+        </a>
+      </div>
+      <p>Where can we find you?</p>
+      <!-- <div class="contact_form"> -->
+      <form
+        action="https://gmail.us7.list-manage.com/subscribe/post?u=e3a2d143fb5c5299b8a2d443a&amp;id=e1f0d76730"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate contact_form"
+      >
+        <label for="name">
+          name
+          <input type="text" name="FNAME" id="name" placeholder="your name" />
+        </label>
+        <label for="email">
+          email
+          <input type="email" name="EMAIL" id="email" placeholder="email" required />
+        </label>
+        <input class="submit" type="submit" value="submit" />
+        <div class="or_container"><span>or</span></div>
+        <div id="gSignInWrapper">
+          <div id="customBtn" class="customGPlusSignIn">
+            <span class="icon"></span>
+            <span class="buttonText">Sign Up with Google</span>
+          </div>
+        </div>
+        <script>
+          // eslint-disable-next-line no-undef
+          startApp()
+        </script>
+        <!-- <p class="privacy">We respect your privacy.</p> -->
+      </form>
+      <!-- </div> -->
+    </section>
+    <!--? ******** scripts goes here depend on pryority  ************* -->
+    <script>
+      // startApp()
+    </script>
+    <script src="./assets/js/app.js"></script>
+    <!-- <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
+    <!-- TODO: Google analytics code goes here  -->
+  </body>
+</html>

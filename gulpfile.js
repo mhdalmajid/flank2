@@ -85,7 +85,7 @@ const styles = () =>
         includePaths: ['node_modules'],
       }).on('error', sass.logError)
     )
-    // .pipe(postcss([autoprefixer('last 2 version'), cssnano()]))
+    .pipe(postcss([autoprefixer('last 2 version'), cssnano()]))
     .pipe(
       rename({
         basename: 'style',

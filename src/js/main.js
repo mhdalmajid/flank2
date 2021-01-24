@@ -25,7 +25,7 @@ function setFixedPosition(e) {
   }
 }
 
-document.addEventListener('scroll', setFixedPosition)
+document.addEventListener('scroll', setFixedPosition, { passive: true })
 
 // show .about section when click and hold flank text (mousedown,touchstart)
 function showPage(e) {
