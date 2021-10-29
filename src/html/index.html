@@ -9,13 +9,13 @@
           and family"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- ? ********  Social media share link property ************* -->
     <meta property="og:title" content="so we can just be friends | flank" />
     <meta property="og:image" content="https://www.flank.digital/assets/images/flank_social.png" />
     <meta
       property="og:description"
-      content="a chill appy thing dedicated to helping people lend, borrow and give money with their friends
-          and family"
+      content="a chill appy thing dedicated to helping people lend, borrow and give money with their friends and family"
     />
     <meta property="og:url" content="https://www.flank.digital" />
     <meta property="og:type" content="website" />
@@ -60,12 +60,40 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet" /> -->
     <!--? ********  stylesheet *************-->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      // eslint-disable-next-line func-names
+      ;(function (w, d, s, l, i) {
+        // eslint-disable-next-line no-param-reassign
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        const f = d.getElementsByTagName(s)[0]
+        const j = d.createElement(s)
+        const dl = l !== 'dataLayer' ? `&l=${l}` : ''
+        j.async = true
+        j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-5S8JJXZ')
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
+
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5S8JJXZ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <script src="https://apis.google.com/js/api:client.js"></script>
     <script>
       let googleUser = {}
-
       function attachSignin(element) {
         // eslint-disable-next-line no-undef
         auth2.attachClickHandler(
@@ -99,14 +127,17 @@
         })
       }
     </script>
+
     <!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
         <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
       </p>
     <![endif]-->
+
     <!--? ********  if javscript is disabled *************-->
     <noscript> You don't have javascript enabled or Your browser doesn't support JavaScript </noscript>
+
     <!--? ******** content for big screen  ************* -->
     <div class="desktop">
       <div class="desktop_wrapper">
@@ -116,15 +147,28 @@
         <div class="flank">
           <h1>flank</h1>
           <h2>so we can just be friends</h2>
-          <h3>We’ll be blazing up the big screen soon.</h3>
-          <h4>For now, check your videophone.</h4>
+          <form
+            action="https://gmail.us7.list-manage.com/subscribe/post?u=e3a2d143fb5c5299b8a2d443a&amp;id=e1f0d76730"
+            method="post"
+            id="mc-embedded-subscribe-form-desktop"
+            name="mc-embedded-subscribe-form"
+            class="validate desktop_form"
+          >
+            <input type="text" name="MERGE1" id="desktop-name" placeholder="enter your name" />
+            <button id="next-input" class="input_arrow" type="button"></button>
+            <input type="email" name="MERGE0" id="desktop-email" class="hidden" placeholder="your email addy" required />
+            <button class="hidden submit input_arrow" type="submit" value="submit"></button>
+          </form>
+          <h3>for a fun fair way to borrow and lend with family and friends</h3>
         </div>
         <div class="qr_code">
-          <img src="./assets/images/qr_code.svg" alt="qr_code" />
+          <img src="./assets/images/qr-code.svg" alt="qr_code" />
         </div>
       </div>
     </div>
+
     <!--? ******** content for small screen viewPort max-width 414px ************* -->
+
     <!--? ******** about layout ************* -->
     <section class="about">
       <div class="about_flank-small flank-small">flank</div>
@@ -139,6 +183,7 @@
         <p><b>3</b>&nbsp;“oh flank that feels so good” - <span class="text-25">Your wildest dreams</span></p>
       </div>
     </section>
+
     <!--? ******** header layout ************* -->
     <section class="header">
       <div class="header_flank-small">flank</div>
@@ -149,7 +194,8 @@
       </div>
       <div class="header_arrow"></div>
     </section>
-    <!--? ******** presentation layout  &nbsp;&nbsp; ************* -->
+
+    <!--? ******** presentation layout ************* -->
     <section class="presentation">
       <div class="presentation_container">
         <p class="p1">
@@ -158,42 +204,39 @@
           <img class="tab_that p1_img2" src="./assets/images/TapThat__1_-removebg-preview.png" alt="tap that" />
           other
         </p>
-        <p class="p2 hidden">
+        <p class="hidden p2">
           like when you borrow 5 for chips at midnight or
           <img class="p2_img" src="./assets/images/giphy-6--unscreen.gif" alt="giphy-6" />
         </p>
-        <p class="p3 hidden">
+        <p class="hidden p3">
           when you lend a friend 40 coz sister owes them 80
           <img class="p3_img" src="./assets/images/bouncing-parrot.gif" alt="bouncing-parrot" />
         </p>
-        <p class="p4 hidden">
+        <p class="hidden p4">
           flank is for giving without losing again
           <img class="p4_img" src="./assets/images/shake-it-off.gif" alt="bouncing-parrot" />
         </p>
-        <p class="p5 hidden">we flank so we can just be friends</p>
+        <p class="hidden p5">we flank so we can just be friends</p>
       </div>
-      <div class="p6 presentation_arrow hidden"></div>
+      <div class="hidden p6 presentation_arrow"></div>
     </section>
+
     <!--? ******** contact layout ************* -->
     <section class="contact">
       <p>We’ll have lots to share with you soooooon.</p>
       <p>You can find us at</p>
       <div class="icons-container">
         <a class="icon_twitter" href="https://twitter.com/flankdigital" target="_blank" rel="noreferrer">
-          <!-- todo twitter Icon -->
           <img src="./assets/images/twitter.svg" alt="twitter icon" />
         </a>
         <a class="icon_email" href="mailto: youfoundflank@gmail.com" target="_blank" rel="noreferrer">
-          <!-- todo Email Icon -->
           <img src="./assets/images/email.svg" alt="email icon" />
         </a>
         <a class="icon_linkedin" href="https://www.linkedin.com/company/youfoundflank" target="_blank" rel="noreferrer">
-          <!-- todo icon_linkedin Icon -->
           <img src="./assets/images/linkedin.svg" alt="linkedin icon" />
         </a>
       </div>
       <p>Where can we find you?</p>
-      <!-- <div class="contact_form"> -->
       <form
         action="https://gmail.us7.list-manage.com/subscribe/post?u=e3a2d143fb5c5299b8a2d443a&amp;id=e1f0d76730"
         method="post"
@@ -223,14 +266,25 @@
         </script>
         <!-- <p class="privacy">We respect your privacy.</p> -->
       </form>
-      <!-- </div> -->
     </section>
-    <!--? ******** scripts goes here depend on pryority  ************* -->
+
+    <!--? ******** scripts goes here depend on priority  ************* -->
     <script>
       // startApp()
     </script>
     <script src="./assets/js/app.js"></script>
     <!-- <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
     <!-- TODO: Google analytics code goes here  -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BGTR62EXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        // eslint-disable-next-line prefer-rest-params, no-undef
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-9BGTR62EXX')
+    </script>
   </body>
 </html>
