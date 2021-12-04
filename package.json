@@ -1,6 +1,6 @@
 {
-  "name": "inco",
-  "version": "1.0.0",
+  "name": "flank-website",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

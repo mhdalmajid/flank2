@@ -18,6 +18,8 @@ $colors: (
   clr-purple: #7304ff,
 );
 
+$color-green: #2afd2e;
+
 :root {
   // each item in color map
   @each $name, $color in $colors {
